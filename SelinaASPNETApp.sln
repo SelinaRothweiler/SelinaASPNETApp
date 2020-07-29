@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelinaASPNETApp", "SelinaASPNETApp\SelinaASPNETApp.csproj", "{9304B2BC-8535-4C86-A15D-D4B2227531A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9304B2BC-8535-4C86-A15D-D4B2227531A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9304B2BC-8535-4C86-A15D-D4B2227531A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9304B2BC-8535-4C86-A15D-D4B2227531A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9304B2BC-8535-4C86-A15D-D4B2227531A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {857A3397-276B-44C3-A069-DD8A57F93B98}
+	EndGlobalSection
+EndGlobal
