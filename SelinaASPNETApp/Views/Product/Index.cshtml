@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Product>
+
+<h1>Products</h1>
+
+<button><a asp-action="Create" asp-controller="Product">Create A New Product!</a></button>
+<br />
+<table class="table">
+    <tr>
+        <th>Link to View Info</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category Id</th>
+        <th>On Sale</th>
+        <th>Stock Level</th>
+    </tr>
+
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td><a href=/Product/ViewProduct/@product.ProductId>Click Me For More Info!</a></td>
+            <td>@product.ProductId</td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>@product.CategoryId</td>
+            <td>@product.OnSale</td>
+            <td>@product.StockLevel</td>
+        </tr>
+    }
+
+</table>

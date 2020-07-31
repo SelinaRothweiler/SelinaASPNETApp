@@ -1,0 +1,62 @@
+﻿@model SelinaASPNETApp.Models.Product
+
+<h1>@Model.Name</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OnSale)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OnSale)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StockLevel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StockLevel)
+        </dd>
+        
+    </dl>
+</div>
+
+<div style="display: block">
+    <a href="/Product/UpdateProduct/@Model.ProductId">Update this Product</a>
+</div>
+
+<div style="display: block">
+    @using (Html.BeginForm("DeleteProduct", "Product", "Post"))
+    {
+        <input type="hidden" asp-for="ProductId" value="@Model.ProductId" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this product" />
+    }
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
